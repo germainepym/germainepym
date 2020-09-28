@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 I am currently studying Bachelor of Computer Science in Monash University.
 
-- I am currently interested in UX design and also Data Science
+- Interested in UX design and also Data Science
 - 📫 How to reach me: germaine.pym@gmail.com
