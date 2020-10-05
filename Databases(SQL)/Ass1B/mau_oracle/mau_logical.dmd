@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mau_logical" id="4F27A26F-7E1C-34A3-F3A1-8108CE101A52" version="3.5">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:46:57 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4F27A26F-7E1C-34A3-F3A1-8108CE101A52</designId>
+</OSDM_Design>

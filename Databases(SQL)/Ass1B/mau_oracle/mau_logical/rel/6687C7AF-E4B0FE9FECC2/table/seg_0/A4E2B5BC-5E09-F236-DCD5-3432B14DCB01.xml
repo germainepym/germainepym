@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4E2B5BC-5E09-F236-DCD5-3432B14DCB01" name="STYLE">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>8BCC9CDE-1FD5-476D-AAC0-941130E6A022</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="style_artwork" id="71E8DFAD-AFC1-4DC5-47DB-5472EF43B5B0">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[style of artwork]]></commentInRDBMS>
+<generatorID>B68C091E-3796-1D5B-D903-EFB259298F0E</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="style_artwork1" id="299C4235-717E-2274-9C72-F0205F1EFB1B">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[style of artwork]]></commentInRDBMS>
+<generatorID>751FB61C-AC1D-D13A-D6D9-5345C4F79728</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ACDD94F-E172-30F6-FD46-4CC5BCB5953A" referredColumn="71E8DFAD-AFC1-4DC5-47DB-5472EF43B5B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="791D97A0-BA26-1C4B-B992-EA0503819EF1" name="STYLE_PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>FCA1B6C2-CD5C-14DF-6730-1C6A59A44FAC</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71E8DFAD-AFC1-4DC5-47DB-5472EF43B5B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94F31DA8-B4CB-98B0-D2BA-B576CE9909E4" name="STYLE_PARENTCHILD">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>C1FADEC6-DA21-AF47-5441-3AA20FBC4D3D</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="299C4235-717E-2274-9C72-F0205F1EFB1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

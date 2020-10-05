@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BCC9CDE-1FD5-476D-AAC0-941130E6A022" name="STYLE">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:58:27 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="style_artwork" id="B68C091E-3796-1D5B-D903-EFB259298F0E">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:58:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[style of artwork]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="style_artwork1" id="751FB61C-AC1D-D13A-D6D9-5345C4F79728">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:12:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[style of artwork]]></commentInRDBMS>
+<generatorID>C1FADEC6-DA21-AF47-5441-3AA20FBC4D3D</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>B68C091E-3796-1D5B-D903-EFB259298F0E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FCA1B6C2-CD5C-14DF-6730-1C6A59A44FAC" name="STYLE PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:58:36 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B68C091E-3796-1D5B-D903-EFB259298F0E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

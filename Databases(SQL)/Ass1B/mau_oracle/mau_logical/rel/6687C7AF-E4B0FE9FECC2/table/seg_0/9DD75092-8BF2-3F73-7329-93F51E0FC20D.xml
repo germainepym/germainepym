@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DD75092-8BF2-3F73-7329-93F51E0FC20D" name="CUSTOMER">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>5608F9F5-94B8-54C4-2643-69F58B970874</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cus_id" id="8C128297-EC2A-43E7-204E-F7D8EAA5C292">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer id]]></commentInRDBMS>
+<generatorID>7D0AAE68-8D71-B0CB-C7F7-6038813B583B</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_given_name" id="1A1A4DAF-F73F-61A7-B8CD-49539B3D80D2">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[given name of customer]]></commentInRDBMS>
+<generatorID>241FBC75-61AB-F77F-A464-E2000D31766C</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_family_name" id="E966AFDA-6822-AD2D-B3D8-3386CE2B9699">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[family name of customer]]></commentInRDBMS>
+<generatorID>6B31ED40-19E5-79B7-CE38-49A6DDF0A794</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_street" id="115C9158-A9DA-8953-AC01-325F1948A271">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the street the customer lives]]></commentInRDBMS>
+<generatorID>6616B9E6-21A2-DF8B-F73D-0C22A3C77C7C</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_town" id="9A87C341-AD23-012A-0A78-4555B99C0004">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the town the customer lives]]></commentInRDBMS>
+<generatorID>11D75539-77B9-2584-24A3-EBB23A228156</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_state" id="1891F1A3-7B61-5414-2118-CA42F71AB83A">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the state the customer lives]]></commentInRDBMS>
+<generatorID>7305AEBA-F60D-C26E-E497-644473D2C7D7</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_phone" id="39C2484F-44E6-425B-8453-B051BB760F97">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer phone number]]></commentInRDBMS>
+<generatorID>897720BC-5FF8-B575-3CBA-0D68D243F0F4</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_business_name" id="E177DDD5-5884-9D0D-2FBF-69F7498EF785">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer business name]]></commentInRDBMS>
+<generatorID>75531804-1B1E-D922-88E2-9E0FE884A844</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D106FDC-1DB6-DD8E-22F3-FBBEAC65B141" name="CUSTOMER_PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>403992F0-D14E-0D1B-2E95-8CDB356D2152</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C128297-EC2A-43E7-204E-F7D8EAA5C292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

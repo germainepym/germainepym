@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BBFE2875-3002-0754-A33C-D24944DA96C0" name="GALLERY">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:59:07 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="gallery_id" id="BC82B5AE-B31C-D427-A661-AE3DAA9F23C6">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[gallery id]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_name" id="E37CA952-9EDC-EDA1-82F2-C88304813A5F">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of gallery]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_manager_gname" id="C6B91B55-99DE-89E3-A619-F0F251FCEDD5">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[given name of the manager of the gallery]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_manager_fname" id="30866A9E-EEAE-92BE-5B57-ED16D8D32811">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 05:45:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[gallery manager family name]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_street" id="62E90CC9-C155-B5BB-F72B-E1A6EB0B0031">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[street the gallery is on]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_town" id="138B650D-A327-FCFD-FF91-F638D3FFA0D9">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[the town the gallery is located]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_state" id="990A650F-3374-9EE2-FACD-81E52F898584">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[the state the gallery is located]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_open" id="38FD6540-7725-F021-A58A-60691B94070C">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[the time the gallery opens]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_close" id="9F00F2D4-8DF1-3FA4-96FA-9B0CE097F450">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[the time gallery closes]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_phone" id="DE591A9C-3686-70BF-16B7-350C282026A1">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[gallery phone number]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_comission" id="2ACC6E4F-DC70-321D-9C61-8B8F477F53AF">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[the comission the gallery receives]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D7764C0-992B-6072-F2C4-FD81E6D61814" name="GALLERY PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:03:21 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC82B5AE-B31C-D427-A661-AE3DAA9F23C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

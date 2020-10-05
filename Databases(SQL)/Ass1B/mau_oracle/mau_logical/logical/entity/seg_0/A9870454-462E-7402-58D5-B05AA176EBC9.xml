@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9870454-462E-7402-58D5-B05AA176EBC9" name="SALE">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:59:17 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sale_id" id="83F5C06D-293B-1C2C-571E-7F9158EE5D81">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:07:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[sale id]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sale_date" id="5F1EAE13-8694-3CDC-5893-5EDDF56D16A7">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:07:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date the artwork was sold]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sale_price" id="BB2C9675-BE74-9C61-80CB-8F1127D42795">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:07:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[the price the artwork was sold for]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<constraintName>chk_saleprice</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="sale_price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cus_id" id="9D1D3F51-17A3-F536-8C9F-20FD59768CE0">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer id]]></commentInRDBMS>
+<generatorID>C1A034F2-C367-7CE9-F195-9ADE8F3C228B</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>7D0AAE68-8D71-B0CB-C7F7-6038813B583B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exhibit_code" id="59637E86-EE7D-103C-DCE3-CD782822FEE4">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:21:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<generatorID>24DB5D35-D9A7-AACB-1280-225333DE1A87</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>9C2907E8-4E82-9481-8E09-23C4C94AD709</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC0CC072-49DD-F6C2-ABA1-13DDFBAE21DA" name="SALE PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:26:18 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83F5C06D-293B-1C2C-571E-7F9158EE5D81</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

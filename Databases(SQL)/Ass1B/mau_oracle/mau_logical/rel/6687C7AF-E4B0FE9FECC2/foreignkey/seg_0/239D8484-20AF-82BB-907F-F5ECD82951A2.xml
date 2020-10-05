@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="239D8484-20AF-82BB-907F-F5ECD82951A2" containerWithKeyObject="76F6D816-3005-650C-FE50-91A426A97E9D" localFKIndex="EF77CB28-3D13-741F-0A50-D2127FDC51F6" name="MEDIADESC_ARTWORK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:43:56 UTC</createdTime>
+<generatorID>461F54A3-E9B4-3AE6-D566-9492D2915E22</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<referredTableLongName>MEDIADESC</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>80A763AC-0FC0-A2A6-70EF-865A26CBDE9E</referredTableID>
+<keyObject>85A79DC6-684C-8304-DF72-0FDB6FAD630D</keyObject>
+<referredKeyID>85A79DC6-684C-8304-DF72-0FDB6FAD630D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>description_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

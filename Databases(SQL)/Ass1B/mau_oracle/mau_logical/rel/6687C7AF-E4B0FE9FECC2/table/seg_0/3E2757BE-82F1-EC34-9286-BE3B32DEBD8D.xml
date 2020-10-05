@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E2757BE-82F1-EC34-9286-BE3B32DEBD8D" name="EXHIBIT">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>33A4CD59-1F94-A280-EF43-D2EAF6BAD3A3</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="exhibit_code" id="4F74BFF3-6222-5F75-4115-61D778109FEA">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<generatorID>9C2907E8-4E82-9481-8E09-23C4C94AD709</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exhibit_start_date" id="030D303E-FEDD-F989-4326-EDF1DE4EA39F">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date the artwork is exhibited]]></commentInRDBMS>
+<generatorID>DE165C51-97F2-8F3A-47A3-6975658AC5E1</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exhibit_end_date" id="72805304-7158-B63F-D1BE-9657F4814BA5">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date the artwork stops being exhibited]]></commentInRDBMS>
+<generatorID>33300223-1502-9292-1A86-47FA02C34ADF</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exhibit_featured_catalog" id="D1E85232-ACD9-15DE-5AAF-65FB69DF63D5">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the artwork featured in the catalog?]]></commentInRDBMS>
+<generatorID>98AA2F53-2A9B-D40C-3B7B-B16D3A06CC10</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<constraintName>chk_featured_catalog</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="No" description="not in featured catalog"/>
+<valueDef value="Yes" description="in featured catalog"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="artwork_no" id="B1DA9070-0720-22E2-C7F2-B34D40971E11">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[artwork number]]></commentInRDBMS>
+<generatorID>DD07456E-2C3B-89FD-E5DC-9A0B51F7A3A9</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CF4B884-3F1E-9709-C9A6-72C7A796B296" referredColumn="157300F9-A4B0-3EE6-4CF1-212EAD52775D"/>
+</associations>
+</Column>
+<Column name="artist_code" id="E7C4AF84-BDF6-E81F-A9DC-905347666477">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[artist code]]></commentInRDBMS>
+<generatorID>BC27483D-AF71-A1F3-A0AB-DFD2F7C5A1B4</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CF4B884-3F1E-9709-C9A6-72C7A796B296" referredColumn="29053AB7-7310-2714-BA0C-21A52C4050F4"/>
+</associations>
+</Column>
+<Column name="gallery_id" id="A8FF13DB-DABC-CEBE-F095-AED5A1D4A822">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[gallery id]]></commentInRDBMS>
+<generatorID>FE4E8029-F702-14D4-C907-B8BBF7B50252</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0A72F42-F214-4C0E-0167-2F80480DDEF1" referredColumn="6ABA133B-982C-BDD1-3A92-DA5F876D1184"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FCA7DA6-1864-3AEE-2209-87E68D331D30" name="EXHIBIT_PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>F00CC0D5-5E14-8149-3ABE-0406A0D83A2E</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F74BFF3-6222-5F75-4115-61D778109FEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5318341E-3586-E802-D265-23EDDEB29D7B" name="NK_exhibit">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:31:20 UTC</createdTime>
+<generatorID>13795775-8F21-B16E-4CA6-3E4033C52B9A</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1DA9070-0720-22E2-C7F2-B34D40971E11"/>
+<colUsage columnID="E7C4AF84-BDF6-E81F-A9DC-905347666477"/>
+<colUsage columnID="A8FF13DB-DABC-CEBE-F095-AED5A1D4A822"/>
+<colUsage columnID="030D303E-FEDD-F989-4326-EDF1DE4EA39F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCE6CE0B-C63B-3C78-C6A6-E38069E97AE2" name="ARTWORK_EXHIBIT">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>D14BDD0F-DB9D-934D-8BF2-A9D8D5D99169</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1DA9070-0720-22E2-C7F2-B34D40971E11"/>
+<colUsage columnID="E7C4AF84-BDF6-E81F-A9DC-905347666477"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43714FBE-3C86-117D-60B9-3C75F0CA3F77" name="GALLERY_EXHIBIT">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>64377BC7-4581-08E7-7514-442D276664C1</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8FF13DB-DABC-CEBE-F095-AED5A1D4A822"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

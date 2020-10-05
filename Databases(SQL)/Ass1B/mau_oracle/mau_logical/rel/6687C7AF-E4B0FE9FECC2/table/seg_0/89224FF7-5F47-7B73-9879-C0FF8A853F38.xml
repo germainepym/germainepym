@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89224FF7-5F47-7B73-9879-C0FF8A853F38" name="SALE">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>A9870454-462E-7402-58D5-B05AA176EBC9</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sale_id" id="E796FF0B-C711-5D8C-DC30-C032C67818E3">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[sale id]]></commentInRDBMS>
+<generatorID>83F5C06D-293B-1C2C-571E-7F9158EE5D81</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sale_date" id="C9E0FA8F-522F-5E5F-8D0B-4F0C0042A529">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date the artwork was sold]]></commentInRDBMS>
+<generatorID>5F1EAE13-8694-3CDC-5893-5EDDF56D16A7</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sale_price" id="A29BDCC2-7173-360E-466F-81738E4F485C">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the price the artwork was sold for]]></commentInRDBMS>
+<generatorID>BB2C9675-BE74-9C61-80CB-8F1127D42795</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<constraintName>chk_saleprice</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="sale_price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cus_id" id="AE894DCC-A562-6797-FDD9-0E5A6E68A380">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer id]]></commentInRDBMS>
+<generatorID>9D1D3F51-17A3-F536-8C9F-20FD59768CE0</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B7A26DE-E9F8-4F0A-2BD3-80969A5DF602" referredColumn="8C128297-EC2A-43E7-204E-F7D8EAA5C292"/>
+</associations>
+</Column>
+<Column name="exhibit_code" id="918AE764-30B9-ED5C-7110-75AB1CD9251C">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<generatorID>59637E86-EE7D-103C-DCE3-CD782822FEE4</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF80DEFC-4BA5-41E9-C435-0BBFBBA7B6A4" referredColumn="4F74BFF3-6222-5F75-4115-61D778109FEA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2431EDC1-848A-AE42-FBE2-6B29EAA2160D" name="SALE_PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>BC0CC072-49DD-F6C2-ABA1-13DDFBAE21DA</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E796FF0B-C711-5D8C-DC30-C032C67818E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA36D9F4-7AD5-F6D5-3A83-91EB2BB4BFBE" name="CUSTOMER_SALE">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>C1A034F2-C367-7CE9-F195-9ADE8F3C228B</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE894DCC-A562-6797-FDD9-0E5A6E68A380"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A73CC093-068B-D96E-8309-5A0F7D4028D7" name="EXHIBIT_SALE">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:28:21 UTC</createdTime>
+<generatorID>24DB5D35-D9A7-AACB-1280-225333DE1A87</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="918AE764-30B9-ED5C-7110-75AB1CD9251C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

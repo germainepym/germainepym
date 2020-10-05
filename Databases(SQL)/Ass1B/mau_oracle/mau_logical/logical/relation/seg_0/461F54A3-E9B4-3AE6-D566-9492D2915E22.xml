@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEDIADESC_ARTWORK" directorySegmentName="seg_0" id="461F54A3-E9B4-3AE6-D566-9492D2915E22">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:42:24 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<sourcePk>2879E632-8297-CBDD-9917-B6D2139D1213</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>is_used_in</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>08065AFF-3B5E-1184-C3FB-9ECF60D7B2F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>239E56F9-A0CE-8BF3-1D38-643B7992E34F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

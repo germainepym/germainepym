@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33A4CD59-1F94-A280-EF43-D2EAF6BAD3A3" name="EXHIBIT">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:59:12 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="exhibit_code" id="9C2907E8-4E82-9481-8E09-23C4C94AD709">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:21:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exhibit_start_date" id="DE165C51-97F2-8F3A-47A3-6975658AC5E1">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:00:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date the artwork is exhibited]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exhibit_end_date" id="33300223-1502-9292-1A86-47FA02C34ADF">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:00:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date the artwork stops being exhibited]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exhibit_featured_catalog" id="98AA2F53-2A9B-D40C-3B7B-B16D3A06CC10">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:00:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the artwork featured in the catalog?]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<constraintName>chk_featured_catalog</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="No" description="not in featured catalog"/>
+<valueDef value="Yes" description="in featured catalog"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="artwork_no" id="DD07456E-2C3B-89FD-E5DC-9A0B51F7A3A9">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:13:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[artwork number]]></commentInRDBMS>
+<generatorID>D14BDD0F-DB9D-934D-8BF2-A9D8D5D99169</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>B7C706BB-5762-3572-0D5A-12A77786E5F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="artist_code" id="BC27483D-AF71-A1F3-A0AB-DFD2F7C5A1B4">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:13:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[artist code]]></commentInRDBMS>
+<generatorID>D14BDD0F-DB9D-934D-8BF2-A9D8D5D99169</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>DBDE52F6-9F0E-16A5-D7F7-D370979CDA2D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_id" id="FE4E8029-F702-14D4-C907-B8BBF7B50252">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:14:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[gallery id]]></commentInRDBMS>
+<generatorID>64377BC7-4581-08E7-7514-442D276664C1</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>BC82B5AE-B31C-D427-A661-AE3DAA9F23C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F00CC0D5-5E14-8149-3ABE-0406A0D83A2E" name="EXHIBIT PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:00:38 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C2907E8-4E82-9481-8E09-23C4C94AD709</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="13795775-8F21-B16E-4CA6-3E4033C52B9A" name="NK_exhibit">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:21:49 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="false"/>
+</engineerTo>
+<newElementsIDs>D14BDD0F-DB9D-934D-8BF2-A9D8D5D99169,64377BC7-4581-08E7-7514-442D276664C1,DE165C51-97F2-8F3A-47A3-6975658AC5E1</newElementsIDs>
+<usedAttributes>
+<attributeRef>DD07456E-2C3B-89FD-E5DC-9A0B51F7A3A9</attributeRef>
+<attributeRef>BC27483D-AF71-A1F3-A0AB-DFD2F7C5A1B4</attributeRef>
+<attributeRef>FE4E8029-F702-14D4-C907-B8BBF7B50252</attributeRef>
+<attributeRef>DE165C51-97F2-8F3A-47A3-6975658AC5E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

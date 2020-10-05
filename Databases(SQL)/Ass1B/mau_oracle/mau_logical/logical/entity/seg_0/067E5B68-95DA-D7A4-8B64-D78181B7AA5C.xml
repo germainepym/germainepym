@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="067E5B68-95DA-D7A4-8B64-D78181B7AA5C" name="STATUS">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 16:59:02 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_no" id="08A94B03-6D04-3CB2-5A3D-541560BA67BA">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:19:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_date" id="AE52A079-C1CA-6C41-08D6-BF332FFB7281">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:01:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[the status of the artwork date]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_artwork" id="C046EB17-DD6C-AF55-DECC-D795143444CB">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:01:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[the status of the artwork]]></commentInRDBMS>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<constraintName>chk_status_artwork</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="DISPLAY" description="on display by a gallery"/>
+<valueDef value="RETURNED" description="returned to the artist"/>
+<valueDef value="SOLD" description="sold"/>
+<valueDef value="TRANSIT" description="in transit (being shipped to/from a gallery)"/>
+<valueDef value="WAREHOUSE" description="in MAU storage at the MAU central warehouse"/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="artwork_no" id="5B69C81A-E77D-E8BE-3DF9-C0CEDFBEA939">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:15:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[artwork number]]></commentInRDBMS>
+<generatorID>B648A787-3D0E-96DE-8569-5CD93BCBDC95</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>B7C706BB-5762-3572-0D5A-12A77786E5F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="artist_code" id="449C4ACE-D128-FDED-3569-B5CFCCBF4A64">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:15:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[artist code]]></commentInRDBMS>
+<generatorID>B648A787-3D0E-96DE-8569-5CD93BCBDC95</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<referedAttribute>DBDE52F6-9F0E-16A5-D7F7-D370979CDA2D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gallery_id" id="0D086BC1-1AA7-A59F-89E6-889ABF3CA49D">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:15:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[gallery id]]></commentInRDBMS>
+<generatorID>73FF2F0F-1B2E-D42C-E950-190EAB192EC7</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BC82B5AE-B31C-D427-A661-AE3DAA9F23C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C93628F5-69D3-E1C1-6447-B6723A5B8035" name="STATUS PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:01:42 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08A94B03-6D04-3CB2-5A3D-541560BA67BA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3D2E6BAB-8A53-B9BD-E8BC-1C075C886E97" name="NK_status">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:20:04 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<newElementsIDs>B648A787-3D0E-96DE-8569-5CD93BCBDC95,AE52A079-C1CA-6C41-08D6-BF332FFB7281</newElementsIDs>
+<usedAttributes>
+<attributeRef>5B69C81A-E77D-E8BE-3DF9-C0CEDFBEA939</attributeRef>
+<attributeRef>449C4ACE-D128-FDED-3569-B5CFCCBF4A64</attributeRef>
+<attributeRef>AE52A079-C1CA-6C41-08D6-BF332FFB7281</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

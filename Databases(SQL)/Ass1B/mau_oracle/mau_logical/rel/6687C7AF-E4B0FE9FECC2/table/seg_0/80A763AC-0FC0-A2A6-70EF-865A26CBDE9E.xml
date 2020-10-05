@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80A763AC-0FC0-A2A6-70EF-865A26CBDE9E" name="MEDIADESC">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:43:56 UTC</createdTime>
+<generatorID>08065AFF-3B5E-1184-C3FB-9ECF60D7B2F3</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="description_id" id="C8ABBAF7-2E69-9AA5-BF6E-AD8F05F8406A">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:43:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[lookup table for media description]]></commentInRDBMS>
+<generatorID>55D1182F-6E6C-6FE4-07A5-7AD09667F0E5</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description_name" id="B1ADF99F-7FFE-2D70-4A2A-63611E9EE687">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:43:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[description name]]></commentInRDBMS>
+<generatorID>102651B9-A9BF-54D7-3629-C700C5C4678F</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85A79DC6-684C-8304-DF72-0FDB6FAD630D" name="MEDIADESC_PK">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-13 01:43:56 UTC</createdTime>
+<generatorID>2879E632-8297-CBDD-9917-B6D2139D1213</generatorID>
+<ownerDesignName>mau_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8ABBAF7-2E69-9AA5-BF6E-AD8F05F8406A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

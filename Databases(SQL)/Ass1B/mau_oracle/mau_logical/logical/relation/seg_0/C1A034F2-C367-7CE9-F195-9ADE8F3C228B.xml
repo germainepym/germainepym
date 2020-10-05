@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CUSTOMER_SALE" directorySegmentName="seg_0" id="C1A034F2-C367-7CE9-F195-9ADE8F3C228B">
+<createdBy>germaine</createdBy>
+<createdTime>2020-05-12 17:16:44 UTC</createdTime>
+<ownerDesignName>mau_logical</ownerDesignName>
+<engineerTo>
+<item key="6687C7AF-2264-D058-BEAA-E4B0FE9FECC2" value="true"/>
+</engineerTo>
+<sourcePk>403992F0-D14E-0D1B-2E95-8CDB356D2152</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>initiate</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5608F9F5-94B8-54C4-2643-69F58B970874</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9870454-462E-7402-58D5-B05AA176EBC9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
