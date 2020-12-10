@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Monash Burgers</title>
+    </head>
+    <body>
+        <!-- Main Content of page -->
+        <h1>Monash Burgers</h1>
+        <h2>Name<input type="text" id ="nameCustomer"></h2>
+        <h2>Mobile<input type="text" id ="mobileCustomer"></h2>
+
+        <h2>Ingredients</h2>    
+        <p style="font-size:25px">Meat</p>
+        <input type="radio" id="Chicken $2" name="meat" value="Chicken">
+        <label for="Chicken $2">Chicken $2</label><br>
+        <input type="radio" id="Beef $3" name="meat" value="Beef">
+        <label for="Beef $3">Beef $3</label><br>
+        <input type="radio" id="Pork $3" name="meat" value="Pork">
+        <label for="Pork $3">Pork $3</label><br>
+
+        <p style="font-size:25px">Cheese</p>
+        <input type="checkbox" id="Cheddar $1" name="cheese" value="Cheddar">
+        <label for="Cheddar $1">Cheddar $1</label><br>
+        <input type="checkbox" id="Brie $1" name="cheese" value="Brie">
+        <label for="Brie $1">Brie $1</label><br>
+        <input type="checkbox" id="Goat Cheese $1" name="cheese" value="Goat Cheese">
+        <label for="Goat Cheese $1">Goat Cheese $1</label><br>
+        <input type="checkbox" id="Stilton $1" name="cheese" value="Stilton">
+        <label for="Stilton $1">Stilton $1</label><br>
+        <input type="checkbox" id="Smoked Gouda $1" name="cheese" value="Smoked Gouda">
+        <label for="Smoked Gouda $1">Smoked Gouda $1</label><br><br>
+
+        <p style="font-size:25px">Sauce</p>
+        <input type="checkbox" id="Classic Burger Sauce $0.5" name="sauce" value="Classic Burger Sauce">
+        <label for="Classic Burger Sauce $0.5">Classic Burger Sauce $0.5</label><br>
+        <input type="checkbox" id="Frenchie $0.5" name="sauce" value="Frenchie">
+        <label for="Frenchie $0.5">Frenchie $0.5</label><br>
+        <input type="checkbox" id="Blue Cheese Mayo $0.5" name="sauce" value="Blue Cheese Mayo">
+        <label for="Blue Cheese Mayo $0.5">Blue Cheese Mayo $0.5</label><br>
+        <input type="checkbox" id="Maple Bacon Relish $0.5" name="sauce" value="Maple Bacon Relish">
+        <label for="Maple Bacon Relish $0.5">Maple Bacon Relish $0.5</label><br><br>
+
+        <p style="font-size:25px">Vegetables</p>
+        <input type="checkbox" id="Onions $1" name="vegetables" value="Onions">
+        <label for="Onions $1">Onions $1</label>
+        <input type="checkbox" id="Pickles $1" name="vegetables" value="Pickles">
+        <label for="Pickles $1">Pickles $1</label>
+        <input type="checkbox" id="Tomatoes $1" name="vegetables" value="Tomatoes">
+        <label for="Tomatoes $1">Tomatoes $1</label>
+        <input type="checkbox" id="Lettuce $1" name="vegetables" value="Lettuce">
+        <label for="Lettuce $1">Lettuce $1</label><br>
+
+        <p style="font-size:25px">Spicy Level</p>
+        <select name="spicy" id="spicy">
+            <option value="None">None</option>
+            <option value="Mild">Mild $0.5</option>
+            <option value="Medium">Medium $0.75</option>
+            <option value="Extra">Extra $1</option>
+        </select>
+        <label for="spicy">Spicy Level</label>
+
+        <p style="font-size:25px">Beverage</p>
+        <input list="beverageList" id="beverage" name="beverage"/>
+        <datalist id="beverageList">
+            <option value="Coke">$2</option>
+            <option value="Mountain Dew">$2</option>
+            <option value="Sprite">$2</option>
+            <option value="Bunderberg">$2</option>
+        </datalist><br>
+
+        <button onclick="submitOrder()">Submit</button>
+        <h2>Your Order</h2>
+        <div id=resultArea style="font-size:20px"></div>
+
+        <script src ="A1a-T2-Q1.js"></script>
+    </body>
+</html>
