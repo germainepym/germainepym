@@ -13,8 +13,10 @@ Here are some ideas to get you started:
 
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
 I am currently studying Bachelor of Computer Science in Monash University.
 
 - Interested in UX design and also Data Science
 - 📫 How to reach me: germaine.pym@gmail.com
+-->
+
